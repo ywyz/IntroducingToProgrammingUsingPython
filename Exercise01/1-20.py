@@ -1,0 +1,20 @@
+import turtle
+
+turtle.goto(200, 0)
+turtle.goto( 200, 100)
+turtle.goto(0, 100)
+turtle.goto(0, 0)
+turtle.left(30)
+turtle.goto(52, 50)
+turtle.goto(252, 50)
+turtle.goto(200, 0)
+turtle.goto(200, 100)
+turtle.goto(252, 150)
+turtle.goto(52, 150)
+turtle.goto(0, 100)
+turtle.goto(52, 150)
+turtle.goto(52, 50)
+turtle.goto(252, 50)
+turtle.goto(252, 150)
+
+turtle.done()
