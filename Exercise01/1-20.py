@@ -1,7 +1,7 @@
 import turtle
 
 turtle.goto(200, 0)
-turtle.goto( 200, 100)
+turtle.goto(200, 100)
 turtle.goto(0, 100)
 turtle.goto(0, 0)
 turtle.left(30)
