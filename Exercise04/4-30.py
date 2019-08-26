@@ -1,10 +1,10 @@
 '''
-@Date: 2019-07-05 16:12:45
+@Date: 2019-08-26 18:58:39
 @Author: ywyz
 @LastModifiedBy: ywyz
 @Github: https://github.com/ywyz
 @LastEditors: ywyz
-@LastEditTime: 2019-08-26 19:07:06
+@LastEditTime: 2019-08-26 19:08:22
 '''
 import time
 
@@ -28,8 +28,11 @@ totalHours = totalMInutes // 60
 # Compute the current hour
 currentHour = totalHours % 24
 timeZone = eval(input("Enter the time zone offset to GMT:"))
-currentHour = currentHour + timeZone
-
-# Display results
-print("Current time is", currentHour, ":", currentMinute, ":", currentSecond,
-      "GMT")
+currentHour += timeZone
+if currentHour > 12:
+    print("Current time is", currentHour - 12, ":", currentMinute, ":",
+          currentSecond, "PM")
+else:
+    # Display results
+    print("Current time is", currentHour, ":", currentMinute, ":",
+          currentSecond, "AM")
