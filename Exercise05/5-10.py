@@ -4,13 +4,13 @@
 @LastModifiedBy: ywyz
 @Github: https://github.com/ywyz
 @LastEditors: ywyz
-@LastEditTime: 2019-09-05 19:17:02
+@LastEditTime: 2019-09-05 20:10:40
 '''
-number = input("Enter the number of students: ")
+number = eval(input("Enter the number of students: \n"))
 studentsnumber = number
 maxscore = 0
 while number != 0:
-    score = eval(input("Enter the score: "))
+    score = eval(input("Enter the score: \n"))
     maxscore = max(maxscore, score)
     number -= 1
 
