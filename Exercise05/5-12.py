@@ -4,7 +4,7 @@
 @LastModifiedBy: ywyz
 @Github: https://github.com/ywyz
 @LastEditors: ywyz
-@LastEditTime: 2019-09-06 18:44:16
+@LastEditTime: 2019-09-09 19:18:10
 '''
 n = 0
 for number in range(100, 1000):
