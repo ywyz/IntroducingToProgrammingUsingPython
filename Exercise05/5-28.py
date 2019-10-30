@@ -1,15 +1,18 @@
-import math
+'''
+@Date: 2019-10-30 17:10:42
+@Author: ywyz
+@LastModifiedBy: ywyz
+@Github: https://github.com/ywyz
+@LastEditors: ywyz
+@LastEditTime: 2019-10-30 18:59:45
+'''
 
-i = eval(input("Enter the number of i: "))
 e = 1
 item = 1
-for item in range(1, i):
-    number = 1
-    total = 1
-
-    for number in range(1, item + 1):
-        total *= number
-    
-    e = e + (1 / total)
-
-print(e)
+for i in range(1, 100000 + 1):
+    item = item / i
+    e += item
+    if i == 10000 or i == 20000 or i == 30000 or i == 40000 or \
+          i == 50000 or i == 60000 or i == 70000 or i == 80000 or \
+          i == 90000 or i == 100000:
+        print("The e is ", e, " for i = ", i)
