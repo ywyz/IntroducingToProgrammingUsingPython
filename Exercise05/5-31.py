@@ -4,9 +4,8 @@
 @LastModifiedBy: ywyz
 @Github: https://github.com/ywyz
 @LastEditors: ywyz
-@LastEditTime: 2019-11-02 17:43:34
+@LastEditTime: 2019-11-02 17:44:40
 '''
-
 year = eval(input("Enter the year: "))
 day = eval(input("Enter the day of the week: "))
 
