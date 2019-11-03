@@ -4,7 +4,7 @@
 @LastModifiedBy: ywyz
 @Github: https://github.com/ywyz
 @LastEditors: ywyz
-@LastEditTime: 2019-09-07 09:23:42
+@LastEditTime: 2019-11-03 17:45:56
 '''
 n = 0
 for number in range(100, 1000):
@@ -20,7 +20,6 @@ for number in range(100, 1000):
                 continue
         else:
             number += 1
-            continue
     else:
         print("\n", number, end=" ")
         number += 1
