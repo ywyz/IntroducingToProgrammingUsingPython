@@ -4,7 +4,7 @@
 @LastModifiedBy: ywyz
 @Github: https://github.com/ywyz
 @LastEditors: ywyz
-@LastEditTime: 2019-11-09 19:15:52
+@LastEditTime: 2019-11-09 19:18:10
 '''
 value = ""
 number = eval(input("Enter a number (Decimal): "))
