@@ -4,7 +4,7 @@
 @LastModifiedBy: ywyz
 @Github: https://github.com/ywyz
 @LastEditors: ywyz
-@LastEditTime: 2019-11-02 17:44:40
+@LastEditTime: 2019-11-10 00:22:14
 '''
 year = eval(input("Enter the year: "))
 day = eval(input("Enter the day of the week: "))
@@ -52,24 +52,22 @@ for months in range(1, 13):
         month = "December"
         dayOfMonths = 31
 
-    print('{:>30}'.format(month), year)
-    print(
-        "-------------------------------------------------------------------")
-    print('{:>10}'.format('Sun'), '{:>10}'.format('Mon'),
-          '{:>10}'.format('Tue'), '{:>10}'.format('Wed'),
-          '{:>10}'.format('Thu'), '{:>10}'.format('Fri'),
-          '{:>10}'.format('Sat'))
-    for number in range(0, 7):
-        if firstday >= number:
-            print('{:>9}'.format(''), end="   ")
-            total += 1
-            continue
-    for n in range(1, dayOfMonths + 1):
-        print('{:>10}'.format(n), end="    ")
-        total += 1
-        if total > 7:
-            print("\n")
-            total = 1
+    print("           ", month)
+    print("-----------------------------")
+    print(" Sun Mon Tue Wed Thu Fri Sat")
+
+    i = 0
+    for i in range(firstday):
+        print("    ", end="")
+
+    for i in range(1, dayOfMonths + 1):
+        if (i < 10):
+            print("   " + str(i), end="")
+        else:
+            print("  " + str(i), end="")
+
+        if ((i + firstday) % 7 == 0):
+            print()
 
     firstday = (firstday + dayOfMonths) % 7
     total = 0
