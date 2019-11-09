@@ -4,7 +4,7 @@
 @LastModifiedBy: ywyz
 @Github: https://github.com/ywyz
 @LastEditors: ywyz
-@LastEditTime: 2019-11-09 23:48:30
+@LastEditTime: 2019-11-09 23:51:19
 '''
 import turtle
 turtle.pensize(10)
@@ -53,7 +53,8 @@ for n in range(4):
             turtle.forward(50)
             turtle.right(90)
         turtle.end_fill()
-
+        x += 50
+        turtle.goto(x, y)
         for edge in range(4):
             turtle.forward(50)
             turtle.right(90)
@@ -62,9 +63,6 @@ for n in range(4):
         x += 50
         turtle.goto(x, y)
         turtle.pendown()
-
-        x += 50
-        turtle.goto(x, y)
 
     x = 0
     y -= 50
