@@ -4,9 +4,10 @@
 @LastModifiedBy: ywyz
 @Github: https://github.com/ywyz
 @LastEditors: ywyz
-@LastEditTime: 2019-09-09 19:18:10
+@LastEditTime: 2019-11-10 00:12:25
 '''
 n = 0
+print(" ", end="")
 for number in range(100, 1000):
     if n != 10:
         if number % 5 == 0 and number % 6 == 0:
