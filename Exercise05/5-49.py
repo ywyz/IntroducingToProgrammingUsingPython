@@ -4,19 +4,19 @@
 @LastModifiedBy: ywyz
 @Github: https://github.com/ywyz
 @LastEditors: ywyz
-@LastEditTime: 2019-11-09 22:37:47
+@LastEditTime: 2019-11-09 22:42:17
 '''
 import turtle
 # 题目
 line = ""
-turtle.write("Multiplication Table")
+turtle.write("Multiplication Table", font=("Courier", 14, "bold"))
 turtle.penup()
 turtle.goto(0, -15)
 turtle.pendown()
 # 第一行数字
 for n in range(1, 10):
     line += str(n) + "       "
-turtle.write(line)
+turtle.write(line, font=("Courier", 14, "bold"))
 turtle.penup()
 turtle.goto(-20, -30)
 turtle.pendown()
@@ -33,7 +33,7 @@ for j in range(1, 10):
             line += str(j * l) + "     "
         else:
             line += str(j * l) + "       "
-    turtle.write(line)
+    turtle.write(line, font=("Courier", 14, "bold"))
     y -= 15
     turtle.penup()
     turtle.goto(-20, y)
