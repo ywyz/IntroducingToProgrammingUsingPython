@@ -4,18 +4,18 @@
 @LastModifiedBy: ywyz
 @Github: https://github.com/ywyz
 @LastEditors: ywyz
-@LastEditTime: 2019-11-10 20:33:06
+@LastEditTime: 2019-11-10 20:49:17
 '''
 from conversiontempersion import fahrenheitToCelsiud
 from conversiontempersion import celsiusToFahrenheit
 
 print("----------------------------------------------------------------------\
-        ----------------------------------")
+----------------------------------")
 print("      Celsius       |        Fahrenheit       ||       Fahrenheit      \
-           |         Celsius        ")
+   |         Celsius        ")
 print(
     "-------------------------------------------------------------------------\
-        -------------------------------")
+-------------------------------")
 celsius = 40
 fahrenheit = 120
 for n in range(10):
