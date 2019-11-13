@@ -4,7 +4,7 @@
 @LastModifiedBy: ywyz
 @Github: https://github.com/ywyz
 @LastEditors: ywyz
-@LastEditTime: 2019-11-13 01:28:02
+@LastEditTime: 2019-11-13 16:53:50
 '''
 
 
@@ -40,11 +40,11 @@ def main():
             number += 1
             n += 1
             temp += 1
+            if number % 10 == 0:
+                print("")
+
         else:
             n += 1
-
-        if number % 10 == 0:
-            print("")
 
 
 main()
