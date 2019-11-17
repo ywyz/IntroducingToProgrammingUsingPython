@@ -1,5 +1,15 @@
+'''
+@Date: 2019-11-17 15:02:44
+@Author: ywyz
+@LastModifiedBy: ywyz
+@Github: https://github.com/ywyz
+@LastEditors: ywyz
+@LastEditTime: 2019-11-17 15:37:14
+'''
+
+
 def primeNumber(n):
-    for temp in range(2, n):
+    for temp in range(2, n // 2):
         if n % temp == 0:
             return False
 
