@@ -3,8 +3,8 @@
 @Author: ywyz
 @LastModifiedBy: ywyz
 @Github: https://github.com/ywyz
-@LastEditors: ywyz
-@LastEditTime: 2019-12-22 05:25:13
+@LastEditors  : ywyz
+@LastEditTime : 2019-12-22 18:37:59
 '''
 
 
@@ -20,30 +20,30 @@ def binaryToHex(binaryValue):
         numTemp = 3
         total = 0
         while numTemp >= 0:
-            total += int(temp[numTemp]) * 2**numTemp
+            total += int(temp[3 - numTemp]) * 2**numTemp
             numTemp -= 1
 
         if total == 10:
-            print('A',ends="")
+            print('A', end="")
 
         elif total == 11:
-            print('B',ends="")
+            print('B', end="")
 
         elif total == 12:
-            print('C'ends="")
+            print('C', end="")
 
         elif total == 13:
-            print('D',ends="")
+            print('D', end="")
 
         elif total == 14:
-            print('E',ends="")
+            print('E', end="")
 
         elif total == 15:
-            print('F',ends="")
+            print('F', end="")
 
         else:
-            print(total,ends="")
-        
+            print(total, end="")
+
         startLength += 4
         endLength += 4
 
@@ -51,5 +51,7 @@ def binaryToHex(binaryValue):
 def main():
     strings = input("Enter a binary strings: ")
     binaryToHex(strings)
+    print()
+
 
 main()
